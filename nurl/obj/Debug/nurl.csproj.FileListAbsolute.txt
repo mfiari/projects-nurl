@@ -1,0 +1,6 @@
+C:\Users\mike\prive\cours\ESGI\csharp\nurl\nurl\nurl\bin\Debug\nurl.exe.config
+C:\Users\mike\prive\cours\ESGI\csharp\nurl\nurl\nurl\bin\Debug\nurl.exe
+C:\Users\mike\prive\cours\ESGI\csharp\nurl\nurl\nurl\bin\Debug\nurl.pdb
+C:\Users\mike\prive\cours\ESGI\csharp\nurl\nurl\nurl\obj\Debug\nurl.csprojResolveAssemblyReference.cache
+C:\Users\mike\prive\cours\ESGI\csharp\nurl\nurl\nurl\obj\Debug\nurl.exe
+C:\Users\mike\prive\cours\ESGI\csharp\nurl\nurl\nurl\obj\Debug\nurl.pdb
