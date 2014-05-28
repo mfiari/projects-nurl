@@ -1,0 +1,28 @@
+Feature:  GET
+    In order : to see the content of a web page
+    as a : shell fan
+    I want to download a web page
+
+Scenario: show the content of a page
+    Given : I entered a fake url option '-url "http://fake"'
+    And : any other option
+    When : I press enter
+    Then : the result should be '<h1>hello</h1>'
+
+Scenario: save the content of a page
+    Given : I entered a fake url option '-url "http://fake"'
+    And : I enter the option '-save' with the value 'fake.txt'
+    When : I press enter
+    Then : a file called 'fake.txt' should be created with the content '<h1>hello</h1>'
+
+Scenario: test the load time of a file
+    Given : I entered a fake url option '-url "http://fake"'
+    And : I enter the option '-times' with the value '5'
+    When : I press enter
+    Then : display 5 time the load time of the url 'http://fake'
+
+Scenario: test the load time of a file and display the average time
+    Given : I entered a fake url option '-url "http://fake"'
+    And : I enter the option '-times' with the value '5' and the option '-avg'
+    When : I press enter
+    Then : load the url 'http://fake' 5 times and display the average time load
