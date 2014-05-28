@@ -20,7 +20,7 @@ namespace nurl
 		}
 		
 		public string show (string url) {
-			return "";
+			return "<h1>hello</h1>";
 		}
  		
 	}
