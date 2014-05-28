@@ -21,5 +21,14 @@ namespace nurl {
 			var result = commande.show(url);
 			Assert.AreSame("<h1>hello</h1>", result, "not same", null);
 		}
+		
+		[Test]
+		public void TestSave() {
+			Command commande = new Command ();
+			var url = "http://fake";
+			var filename = "fake.txt";
+			commande.save(url, filename);
+			Assert.True(true);
+		}
 	}
 }

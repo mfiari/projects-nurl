@@ -22,6 +22,10 @@ namespace nurl
 		public string show (string url) {
 			return "<h1>hello</h1>";
 		}
+		
+		public void save (string url, string filename) {
+			
+		}
  		
 	}
 }
