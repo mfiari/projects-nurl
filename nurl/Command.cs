@@ -26,12 +26,9 @@ namespace nurl
 		}
 		
 		public void save (string url, string filename) {
-			Stream fileStream = File.Create(filename);
-			if (fileStream != null) {
-				StreamWriter writer = new StreamWriter(fileStream, Encoding.UTF8);
-				writer.Write("<h1>hello</h1>");
-				writer.Dispose();
-			}
+			FileManager fileManager = new FileManager(filename);
+			fileManager.write("<h1>hello</h1>");
+			fileManager.close();
 		}
  		
 	}

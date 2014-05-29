@@ -28,7 +28,9 @@ namespace nurl {
 			var url = "http://fake";
 			var filename = "fake.txt";
 			commande.save(url, filename);
-			Assert.True(true);
+			FileManager fileManager = new FileManager(filename);
+			var result = fileManager.getContent();
+			Assert.AreEqual("<h1>hello</h1>", result, "not same");
 		}
 	}
 }

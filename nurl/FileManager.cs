@@ -53,5 +53,9 @@ namespace nurl {
 			}
 			return null;
 		}
+		
+		public void close () {
+			this.fileStream.Dispose();
+		}
 	}
 }
