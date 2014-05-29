@@ -29,5 +29,13 @@ namespace nurl {
 		public void TestFileNotExist() {
 			Assert.False(FileManager.fileExiste("toto.txt"));
 		}
+		
+		[Test]
+		public void TestWrite() {
+			FileManager fileManager = new FileManager("myFile.txt");
+			fileManager.write("mon texte");
+			var result = fileManager.getContent();
+			Assert.AreEqual("mon texte", result, "not same");
+		}
 	}
 }

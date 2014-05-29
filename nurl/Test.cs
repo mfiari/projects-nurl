@@ -19,7 +19,7 @@ namespace nurl {
 			Command commande = new Command ();
 			var url = "http://fake";
 			var result = commande.show(url);
-			Assert.AreSame("<h1>hello</h1>", result, "not same", null);
+			Assert.AreEqual("<h1>hello</h1>", result, "not same");
 		}
 		
 		[Test]
