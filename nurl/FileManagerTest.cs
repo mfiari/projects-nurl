@@ -9,15 +9,25 @@
 using System;
 using NUnit.Framework;
 
-namespace nurl
-{
+namespace nurl {
+	
 	[TestFixture]
-	public class FileManagerTest
-	{
+	public class FileManagerTest {
+		
 		[Test]
-		public void TestMethod()
-		{
-			// TODO: Add your test.
+		public void TestCreate() {
+			FileManager fileManager = new FileManager("test.txt");
+			Assert.True(FileManager.fileExiste("test.txt"));
+		}
+		
+		[Test]
+		public void TestFileExist() {
+			Assert.True(FileManager.fileExiste("test.txt"));
+		}
+		
+		[Test]
+		public void TestFileNotExist() {
+			Assert.False(FileManager.fileExiste("toto.txt"));
 		}
 	}
 }

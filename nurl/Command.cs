@@ -7,6 +7,8 @@
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using System;
+using System.IO;
+using System.Text;
 
 namespace nurl
 {
@@ -24,7 +26,12 @@ namespace nurl
 		}
 		
 		public void save (string url, string filename) {
-			
+			Stream fileStream = File.Create(filename);
+			if (fileStream != null) {
+				StreamWriter writer = new StreamWriter(fileStream, Encoding.UTF8);
+				writer.Write("<h1>hello</h1>");
+				writer.Dispose();
+			}
 		}
  		
 	}
